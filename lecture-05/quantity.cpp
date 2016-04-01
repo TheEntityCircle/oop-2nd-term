@@ -19,7 +19,7 @@ typedef DimQ<0, 0, 1, 0, 0, 0, 0> Time;
 typedef DimQ<0, 0, 0, 1, 0, 0, 0> Current;
 typedef DimQ<0, 0, 0, 0, 1, 0, 0> Temperature;
 typedef DimQ<0, 0, 0, 0, 0, 1, 0> Amount;
-typedef DimQ<0, 0, 0, 0, 0, 0, 1> Liminous;
+typedef DimQ<0, 0, 0, 0, 0, 0, 1> Luminous;
 
 typedef DimQ<1, 0, -1, 0, 0, 0, 0> Velocity;
 typedef DimQ<1, 0, -2, 0, 0, 0, 0> Acceleration;
