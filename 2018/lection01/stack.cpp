@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <iostream>
 
-using namespace std;
-
 class stack
 {
 public:
@@ -20,7 +18,7 @@ private:
 
 stack::stack(int stack_size)
 {
-	cout << "stack::stack() called\n";
+	printf("stack::stack() called\n");
 	this->top = 0;
 	this->size = stack_size;
 	this->data = (int*)malloc(sizeof(int)*stack_size); // not nice, not c++ style
@@ -28,7 +26,7 @@ stack::stack(int stack_size)
 
 stack::~stack()
 {
-	cout << "stack::~stack() called\n";
+	printf("stack::~stack() called\n");
 	free(this->data);
 }
 
