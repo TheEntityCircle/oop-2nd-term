@@ -1,0 +1,79 @@
+Class <unnamed struct>
+   size=8 align=4
+   base size=8 base align=4
+<unnamed struct> (0x0x7f114092cb40) 0
+
+Class <unnamed struct>::<unnamed union>
+   size=4 align=4
+   base size=4 base align=4
+<unnamed struct>::<unnamed union> (0x0x7f114092cc00) 0
+
+Class <unnamed struct>
+   size=8 align=4
+   base size=8 base align=4
+<unnamed struct> (0x0x7f114092cba0) 0
+
+Class <unnamed struct>
+   size=16 align=8
+   base size=16 base align=8
+<unnamed struct> (0x0x7f114092cc60) 0
+
+Class <unnamed struct>
+   size=16 align=8
+   base size=16 base align=8
+<unnamed struct> (0x0x7f114092ccc0) 0
+
+Class _IO_marker
+   size=24 align=8
+   base size=24 base align=8
+_IO_marker (0x0x7f114092cd20) 0
+
+Class _IO_FILE
+   size=216 align=8
+   base size=216 base align=8
+_IO_FILE (0x0x7f114092cd80) 0
+
+Class <unnamed struct>
+   size=32 align=8
+   base size=32 base align=8
+<unnamed struct> (0x0x7f114092cde0) 0
+
+Class <unnamed struct>
+   size=12 align=4
+   base size=12 base align=4
+<unnamed struct> (0x0x7f114092ce40) 0
+
+Vtable for TestClass
+TestClass::_ZTV9TestClass: 7 entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI9TestClass)
+16    (int (*)(...))TestClass::~TestClass
+24    (int (*)(...))TestClass::~TestClass
+32    (int (*)(...))TestClass::getA
+40    (int (*)(...))TestClass::getB
+48    (int (*)(...))TestClass::getC
+
+Class TestClass
+   size=24 align=8
+   base size=20 base align=8
+TestClass (0x0x7f114092cea0) 0
+    vptr=((& TestClass::_ZTV9TestClass) + 16)
+
+Vtable for DerivedClass
+DerivedClass::_ZTV12DerivedClass: 7 entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI12DerivedClass)
+16    (int (*)(...))DerivedClass::~DerivedClass
+24    (int (*)(...))DerivedClass::~DerivedClass
+32    (int (*)(...))DerivedClass::getA
+40    (int (*)(...))TestClass::getB
+48    (int (*)(...))TestClass::getC
+
+Class DerivedClass
+   size=32 align=8
+   base size=32 base align=8
+DerivedClass (0x0x7f11407c21a0) 0
+    vptr=((& DerivedClass::_ZTV12DerivedClass) + 16)
+  TestClass (0x0x7f11409963c0) 0
+      primary-for DerivedClass (0x0x7f11407c21a0)
+
