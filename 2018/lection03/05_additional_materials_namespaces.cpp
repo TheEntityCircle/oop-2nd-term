@@ -9,21 +9,21 @@ namespace A {
         int x = 3;
         
         // Функции в пространстве имён B
-        int getX() { return ::x; };
-        int getAX() { return ::A::x; };
-        int getBX() { return x; };
-    };
+        int getX() { return ::x; }
+        int getAX() { return ::A::x; }
+        int getBX() { return x; }
+    }
     
     // Функции в пространстве имён A
-    int getX() { return ::x; };
-    int getAX() { return x; };
-    int getBX() { return B::x; };
+    int getX() { return ::x; }
+    int getAX() { return x; }
+    int getBX() { return B::x; }
 }
 
 // Функции в глобальном пространстве имён
-int getX() { return x; };
-int getAX() { return A::x; };
-int getBX() { return A::B::x; };
+int getX() { return x; }
+int getAX() { return A::x; }
+int getBX() { return A::B::x; }
 
 int main() {
 

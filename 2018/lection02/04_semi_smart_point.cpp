@@ -10,9 +10,9 @@ private:
 
 public:
 	Point2D() {
-        this->x = 0;
-        this->y = 0;
-    };
+		this->x = 0;
+		this->y = 0;
+	}
 
 	Point2D(float x, float y) {
 		this->x = x;
@@ -24,7 +24,7 @@ public:
 		this->y = y;
 	}
 
-	~Point2D() { };
+	~Point2D() { }
 
 	void setX(float x) {
 		this->x = x;
@@ -48,10 +48,10 @@ int main()
 	Point2D p;
 	cout << "Point: (" << p.getX() << ", " << p.getY() << ")" << endl;
 
-    float x_f = 1.5;
-    float y_f = 2.5;
-    Point2D p1(x_f, y_f);
-    cout << "Point: (" << p1.getX() << ", " << p1.getY() << ")" << endl;
+	float x_f = 1.5;
+	float y_f = 2.5;
+	Point2D p1(x_f, y_f);
+	cout << "Point: (" << p1.getX() << ", " << p1.getY() << ")" << endl;
 
 	int x_i = 4;
 	int y_i = 8;

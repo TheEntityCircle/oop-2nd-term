@@ -8,9 +8,9 @@ private:
 	float y;
 public:
 	Point2D() {
-        this->x = 0;
-        this->y = 0;
-    };
+		this->x = 0;
+		this->y = 0;
+	}
 
 	Point2D(float x, float y) {
 		this->x = x;
@@ -22,7 +22,7 @@ public:
 		this->y = y;
 	}
 
-	~Point2D() { };
+	~Point2D() { }
 
 	void setX(float x) {
 		this->x = x;
@@ -63,13 +63,13 @@ int main()
 		cout << "Points are equal" << endl;
 	} else {
 		cout << "Points are not equal" << endl;
-    }
+	}
 
 	if(p2 == p3) {
 		cout << "Points are equal" << endl;
 	} else {
 		cout << "Points are not equal" << endl;
-    }
+	}
 
 	return 0;
 }

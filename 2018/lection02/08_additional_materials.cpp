@@ -6,9 +6,9 @@ using namespace std;
 class TestClassA
 {
 public:
-	TestClassA() {
+    TestClassA() {
         cout << "ClassA simple constructor called" << endl;
-    };
+    }
 
     TestClassA(int n) {
         cout << "ClassA complex constructor called" << endl;
@@ -18,9 +18,9 @@ public:
         }
     }
 
-	~TestClassA() {
+    ~TestClassA() {
         cout << "ClassA destructor called" << endl;
-    };
+    }
 };
 
 
@@ -31,7 +31,7 @@ private:
 public:
     TestClassB() {
         cout << "ClassB simple constructor called" << endl;
-    };
+    }
 
     TestClassB(int n) {
         cout << "ClassB complex constructor called" << endl;
@@ -43,15 +43,15 @@ public:
 
     ~TestClassB() {
         cout << "ClassB destructor called" << endl;
-        for(int i = 0; i < children.size(); i++) {
+        for(unsigned int i = 0; i < children.size(); i++) {
             delete children[i];
         }
-    };
+    }
 };
 
 int main()
 {
-	//TestClassA pa(2);
+    //TestClassA pa(2);
     //TestClassB pb(2);
-	return 0;
+    return 0;
 }

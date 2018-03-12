@@ -10,12 +10,12 @@ private:
 
 public:
 	Point2D() {
-        cout << "Constructor called" << endl;
-    };
+		cout << "Constructor called" << endl;
+	}
 
 	~Point2D() {
-        cout << "Destructor called" << endl;
-    };
+		cout << "Destructor called" << endl;
+	}
 
 	void setX(float x) {
 		this->x = x;
@@ -34,10 +34,10 @@ public:
 	}
 };
 
-int func()
+void func()
 {
     Point2D p1;
-};
+}
 
 int main()
 {

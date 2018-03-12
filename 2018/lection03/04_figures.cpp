@@ -8,8 +8,8 @@ private:
     float weight;
 public:
     // Все эти методы будут доступны в дочерних классах
-    float getWeight() { return weight; };
-    void setWeight(float weight) { this->weight = weight; };
+    float getWeight() { return weight; }
+    void setWeight(float weight) { this->weight = weight; }
 
     void print() { cout << this << endl; }
 
@@ -27,16 +27,16 @@ class Triangle: public Figure {
             this->a = a;
             this->b = b;
             this->c = c;
-        };
+        }
 
-        float getA() { return a; };
-        float getB() { return b; };
-        float getC() { return c; };
+        float getA() { return a; }
+        float getB() { return b; }
+        float getC() { return c; }
 
         // Реализация виртуального метода
         float square() override {
             float p = (a+b+c)/2;
-            return sqrt(p*(p-a)*(p-b)*(p-c));
+            return sqrtf(p*(p-a)*(p-b)*(p-c));
         }
 
 };
@@ -50,10 +50,10 @@ class Rectangle: public Figure {
         Rectangle(float a, float b) {
             this->a = a;
             this->b = b;
-        };
+        }
 
-        float getA() { return a; };
-        float getB() { return b; };
+        float getA() { return a; }
+        float getB() { return b; }
 
         // Реализация виртуального метода
         float square() override {
@@ -69,14 +69,14 @@ class Circle: public Figure {
     public:
         Circle(float r) {
             this->r = r;
-        };
+        }
 
-        float getR() { return r; };
+        float getR() { return r; }
 
         // Реализация виртуального метода
         float square() override {
             return M_PI*r*r;
-        };
+        }
 };
 
 int main() {

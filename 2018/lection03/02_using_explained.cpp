@@ -9,12 +9,12 @@ namespace A {
 
     namespace B {
         void hello() { cout << "A::B::Hello" << endl; }
-    };
-};
+    }
+}
 
 namespace C {
     void hello() { cout << "C::Hello" << endl; }
-};
+}
 
 // Включение всего пространства имён A в глобальное пространство имён
 //using namespace A;

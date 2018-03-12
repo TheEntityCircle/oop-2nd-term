@@ -13,11 +13,11 @@ namespace A {
 // Реализация функций
 int doSomeWork() {
     return x;
-};
+}
 
 int A::doSomeWork() {
     return x;
-};
+}
 
 int main() {
     std::cout << "global call: " << doSomeWork() << std::endl;

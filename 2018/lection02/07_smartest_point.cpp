@@ -8,9 +8,9 @@ private:
 	float y;
 public:
 	Point2D() {
-        this->x = 0;
-        this->y = 0;
-    };
+		this->x = 0;
+		this->y = 0;
+	}
 
 	Point2D(float x, float y) {
 		this->x = x;
@@ -22,7 +22,7 @@ public:
 		this->y = y;
 	}
 
-	~Point2D() { };
+	~Point2D() { }
 
 	void setX(float x) {
 		this->x = x;
@@ -63,4 +63,5 @@ int main()
 	int y_i = 8;
 	Point2D p2(x_i, y_i);
 	cout << "p2: " << p2 << endl;
+	return 0;
 }
