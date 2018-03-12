@@ -14,12 +14,12 @@ private:
 A::A(int i)
 {
 	this->secret = i;
-};
+}
 
 void A::describe()
 {
 	std::cout << "I'm A: " << this->secret << std::endl;
-};
+}
 
 class B
 {
@@ -30,14 +30,14 @@ public:
 
 B::B()
 {
-};
+}
 
 void B::run(A* a)
 {
-    // Это не скомпилится, так как secret объявлен в классе A как private
+	// Это не скомпилится, так как secret объявлен в классе A как private
 	std::cout << "Class B run: " << a->secret << std::endl;
 	a->secret = 13;
-};
+}
 
 int main()
 {

@@ -24,7 +24,7 @@ class Cow: public Animal {
 public:
     Cow() {
         cout << "Cow created" << endl;
-    };
+    }
 
     void say() {
         cout << "Moo" << endl;
@@ -35,7 +35,7 @@ class Dog: public Animal {
 public:
     Dog() {
         cout << "Dog created" << endl;
-    };
+    }
 
     void say() {
         cout << "Woof!" << endl;
