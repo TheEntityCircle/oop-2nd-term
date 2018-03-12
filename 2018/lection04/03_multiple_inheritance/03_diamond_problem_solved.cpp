@@ -7,6 +7,7 @@ protected:
     int status = 0;
 public:
     virtual int check() = 0;
+    virtual ~Connector() { }
 };
 
 class Transmitter: virtual protected Connector {
@@ -26,5 +27,6 @@ int main()
 {
     Socket* s = new Socket();
     s->check();
+    delete s;
     return 0;
 }

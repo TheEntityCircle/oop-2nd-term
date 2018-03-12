@@ -108,5 +108,7 @@ int main() {
     // 
     // Figure fig;
     
+    for (int i = 0; i < 15; i++)
+        delete figs[i];
     return 0;
 }

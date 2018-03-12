@@ -47,5 +47,7 @@ int main()
 	B* b = new B();
 	b->run(a);
 	a->describe();
+	delete b;
+	delete a;
 	return 0;
 }

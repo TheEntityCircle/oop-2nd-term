@@ -75,5 +75,8 @@ int main(int argc, char** argv) {
     IBase* obj3 = new ClassC();
     //IBase* obj4 = new ClassD();
 
+    delete obj3;
+    delete obj2;
+    delete obj1;
     return 0;
 }
