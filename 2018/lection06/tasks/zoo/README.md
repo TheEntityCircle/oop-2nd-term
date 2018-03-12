@@ -37,7 +37,7 @@ public:
 Публичные методы должны быть ровно такие. Необходимую protected / private часть класса можете создать себе любую.
 
 Пример ожидаемого сценария работы всей конструкции:
-``cpp
+```cpp
     ZooKeeper z;
     z.handleAnimal(new Monkey());
     z.handleAnimal(new Monkey());
