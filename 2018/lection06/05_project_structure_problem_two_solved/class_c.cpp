@@ -4,4 +4,4 @@ class ClassC;
 
 void ClassC::doGreatWork()
 {
-};
+}

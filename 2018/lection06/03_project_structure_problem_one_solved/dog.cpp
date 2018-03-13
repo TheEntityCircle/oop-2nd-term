@@ -11,7 +11,7 @@ class Dog: public Animal {
 public:
     Dog() {
         cout << "Dog created" << endl;
-    };
+    }
 
     void say() {
         cout << "Woof!" << endl;

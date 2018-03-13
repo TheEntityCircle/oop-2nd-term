@@ -18,6 +18,6 @@ void ClassA::doSomething(ClassC* c)
 /*void ClassA::doSomething(ClassB* b)
 {
     b->doGreatWork(this);
-};*/
+}*/
 
 #endif

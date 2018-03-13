@@ -9,6 +9,6 @@ public:
 
 void ClassC::doGreatWork()
 {
-};
+}
 
 #endif

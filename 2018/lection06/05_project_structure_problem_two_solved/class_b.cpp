@@ -7,4 +7,4 @@ class ClassB;
 void ClassB::doGreatWork(ClassA* a)
 {
     std::cout << a << std::endl;
-};
+}
