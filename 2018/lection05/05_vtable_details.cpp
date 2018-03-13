@@ -14,11 +14,11 @@ protected:
     int b;
     int c;
 public:
-    TestClass() { };
-    virtual ~TestClass() { };
-    virtual int getA() { return a; };
-    virtual int getB() { return b; };
-    virtual int getC() { return c; };
+    TestClass() { }
+    virtual ~TestClass() { }
+    virtual int getA() { return a; }
+    virtual int getB() { return b; }
+    virtual int getC() { return c; }
 };
 
 class DerivedClass: protected TestClass
@@ -28,12 +28,12 @@ protected:
     int e;
     int f;
 public:
-    DerivedClass() { };
-    ~DerivedClass() { };
-    int getA() override { return a; };
-    int getD() { return d; };
-    int getE() { return e; };
-    int getF() { return f; };
+    DerivedClass() { }
+    ~DerivedClass() { }
+    int getA() override { return a; }
+    int getD() { return d; }
+    int getE() { return e; }
+    int getF() { return f; }
 };
 
 int main()
