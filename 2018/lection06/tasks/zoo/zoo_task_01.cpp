@@ -7,6 +7,7 @@ class Animal {
 public:
     virtual string getType() = 0;
     virtual bool isDangerous() = 0;
+    virtual ~Animal() {}
 };
 
 // Класс обезьяны
@@ -38,9 +39,15 @@ public:
 int main()
 {
     ZooKeeper z;
-    z.handleAnimal(new Monkey());
-    z.handleAnimal(new Monkey());
-    z.handleAnimal(new Lion());
+    Monkey *m = new Monkey();
+    z.handleAnimal(m);
+    delete m;
+    m = new Monkey();
+    z.handleAnimal(m);
+    delete m;
+    Lion *l = new Lion();
+    z.handleAnimal(l);
+    delete l;
     cout << z.getDangerousCount() << endl;
     return 0;
 }
