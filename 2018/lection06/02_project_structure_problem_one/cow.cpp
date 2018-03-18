@@ -8,7 +8,7 @@ class Cow: public Animal { // <-- но тут есть отсылка к Animal,
 public:
     Cow() {
         cout << "Cow created" << endl;
-    };
+    }
 
     void say() {
         cout << "Moo" << endl;

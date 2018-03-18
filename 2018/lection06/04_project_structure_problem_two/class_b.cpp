@@ -14,6 +14,6 @@ public:
 void ClassB::doGreatWork(ClassA* a)
 {
     std::cout << a << std::endl;
-};
+}
 
 #endif

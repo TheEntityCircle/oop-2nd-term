@@ -13,6 +13,7 @@ class Animal {
 public:
     virtual string getType() = 0;
     virtual bool isDangerous() = 0;
+    virtual ~Animal() {}
 };
 ```
 
@@ -39,9 +40,15 @@ public:
 Пример ожидаемого сценария работы всей конструкции:
 ```cpp
     ZooKeeper z;
-    z.handleAnimal(new Monkey());
-    z.handleAnimal(new Monkey());
-    z.handleAnimal(new Lion());
+    Monkey *m = new Monkey();
+    z.handleAnimal(m);
+    delete m;
+    m = new Monkey();
+    z.handleAnimal(m);
+    delete m;
+    Lion *l = new Lion();
+    z.handleAnimal(l);
+    delete l;
     cout << z.getDangerousCount() << endl;
 ```
 
