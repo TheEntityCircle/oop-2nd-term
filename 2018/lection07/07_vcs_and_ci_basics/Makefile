@@ -8,10 +8,10 @@ OBJECTS=$(SOURCES:.cpp=.o)
 all: app tests
 
 app: $(OBJECTS) main.o
-	$(CC) $(LDFLAGS) $(OBJECTS) main.o -o $@
+	$(CC) $(OBJECTS) main.o -o $@ $(LDFLAGS)
 
 tests: $(OBJECTS) tests.o
-	$(CC) $(LDFLAGS) $(OBJECTS) tests.o -o $@
+	$(CC) $(OBJECTS) tests.o -o $@ $(LDFLAGS)
 
 run-tests: tests
 	./tests
