@@ -12,4 +12,4 @@ int ClassC::doGreatWork()
 {
     int tmp = calc_magic(this->value);
     return tmp * tmp;
-};
+}

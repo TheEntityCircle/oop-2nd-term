@@ -10,6 +10,10 @@ Animal::Animal()
     this->brain = true;
 }
 
+Animal::~Animal()
+{
+}
+
 bool Animal::hasBrain() {
     return brain;
 }

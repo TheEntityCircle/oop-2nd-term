@@ -10,5 +10,5 @@ Dice::Dice(int number_of_faces)
 
 int Dice::roll()
 {
-    return rand() % this->number_of_faces;
+    return 1 + rand() % this->number_of_faces;
 }

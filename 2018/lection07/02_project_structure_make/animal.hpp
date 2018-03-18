@@ -8,6 +8,7 @@ protected:
 
 public:
     Animal();
+    virtual ~Animal();
 
     virtual void say() = 0; // Виртуальный метод, реализация будет в дочерних классах
 
