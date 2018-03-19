@@ -98,6 +98,11 @@ public:
             cout << "Can use: " << players[i]->canUse(items[j]) << endl;
         }
     }
+
+    for(int i = 0; i < 2; i++)
+        delete players[i];
+    for(int j = 0; j < 3; j++)
+        delete items[j];
 ```
 
 Итак, задача - реализуйте классы Knight и Wizard под эти требования.
