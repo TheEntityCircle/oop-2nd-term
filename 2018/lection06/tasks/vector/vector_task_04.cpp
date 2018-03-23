@@ -9,6 +9,11 @@ public:
     Vector2D(int x, int y);
     ~Vector2D();
 
+    int getX() const;
+    int getY() const;
+    void setX(int x);
+    void setY(int y);
+
     bool operator== (const Vector2D& v2);
     bool operator!= (const Vector2D& v2);
     Vector2D operator+ (const Vector2D& v2);

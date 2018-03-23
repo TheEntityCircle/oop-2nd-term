@@ -115,8 +115,15 @@ public:
     // Тут всё без изменений
     Vector2D(int x, int y);
     ~Vector2D();
-    int getX();
-    int getY();
+
+    // Теперь getter-ы получили модификатор const. Их код можно оставить как был, он будет работать.
+    // Можно решить и без const. Но тогда некоторые логичные варианты решения внезапно откажутся работать.
+    // Так как подробного разбора const-ов в разных местах кода ещё не было, на сейчас просто добавьте его.
+    // Подробности будут на лекции 26-го марта.
+    int getX() const;
+    int getY() const;
+
+    // Тут всё без изменений
     bool operator== (const Vector2D& v2);
     bool operator!= (const Vector2D& v2);
     Vector2D operator+ (const Vector2D& v2);
@@ -168,8 +175,14 @@ public:
     // Тут всё без изменений
     Vector2D(int x, int y);
     ~Vector2D();
-    int getX();
-    int getY();
+    int getX() const;
+    int getY() const;
+
+    // Добавляем setter'ы - установка x и y (самих полей в публичной части быть не должно)
+    void setX(int x);
+    void setY(int y);
+
+    // Тут всё без изменений
     bool operator== (const Vector2D& v2);
     bool operator!= (const Vector2D& v2);
     Vector2D operator+ (const Vector2D& v2);

@@ -7,6 +7,8 @@ class Vector2D
 public:
     Vector2D(int x, int y);
     ~Vector2D();
+    int getX() const;
+    int getY() const;
 
     bool operator== (const Vector2D& v2);
     bool operator!= (const Vector2D& v2);
