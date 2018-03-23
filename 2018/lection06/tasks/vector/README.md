@@ -147,14 +147,14 @@ Vector2D operator* (int a, const Vector2D& v);
     Vector2D v2(2, 2);
     Vector2D v3 = v1 * 42;
     cout << v3 << endl;
-    Vector2D v4 = 42 * v1;
+    Vector2D v4 = 42 * v2;
     cout << v4 << endl;
 ```
 
 И на экране после этого будет:
 ```
 (42; 42)
-(42; 42)
+(84; 84)
 ```
 
 ##### Файлы к части 3

@@ -42,9 +42,9 @@ protected:
     int level;
 public:
     // Создать героя, все подробности будут указаны позже
-    Player() { };
+    Player() { }
     // Удалить героя, ничего умного эта процедура пока что не требует
-    virtual ~Player() { };
+    virtual ~Player() { }
 
     // Базовые методы, пока что очень простые.
     // На данном этапе можно считать, что для всех героев они ведут себя одинаково, 
@@ -98,6 +98,11 @@ public:
             cout << "Can use: " << players[i]->canUse(items[j]) << endl;
         }
     }
+
+    for(int i = 0; i < 2; i++)
+        delete players[i];
+    for(int j = 0; j < 3; j++)
+        delete items[j];
 ```
 
 Итак, задача - реализуйте классы Knight и Wizard под эти требования.
