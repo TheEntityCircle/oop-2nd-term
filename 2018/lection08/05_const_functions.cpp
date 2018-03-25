@@ -4,15 +4,15 @@ using namespace std;
 
 void f1(const int& val) {
     //val = 5; // это не будет пропущено компилятором из-за const
-};
+}
 
 void f2(const int* valptr) {
     //*valptr = 5; // и это тоже
-};
+}
 
 void f3(int val) {
     val = 5; // а это будет, но оно не имеет смысла
-};
+}
 
 int main()
 {
