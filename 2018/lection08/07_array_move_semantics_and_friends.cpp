@@ -2,6 +2,35 @@
 #include <cstring>
 #include <cstdlib>
 
+/* 
+ * Этот пример специфичен для C++11.
+ * Относительно старыми компиляторами даже не соберётся.
+ */
+
+/*
+ * Это достаточно сложный пример, затрагивающий тему move semantics.
+ * Это очень обширная тема, возникшая из простого вопроса "как не копировать 
+ * большие объёмы по памяти при возврате чего-нибудь тяжёлого из функции".
+ *
+ * В C++98 можно было делать так:
+ *
+ * Вариант 1: возвращаем указатель, копирования нет, но не забудьте про delete
+ * vector<int>* make_big_vector(); 
+ * ...
+ * vector<int>* result = make_big_vector();
+ *
+ * Вариант 2: выдача по ссылке, копирования нет, но вызывающему нужен именованный объект
+ * void make_big_vector( vector<int>& out );
+ * ...
+ * vector<int> result;
+ * make_big_vector( result );
+ *
+ * В C++11 можно использовать перенос (move semantics)
+ * vector<int> make_big_vector();
+ * ...
+ * vector<int> result = make_big_vector();
+ */
+
 using namespace std;
 
 class Array
