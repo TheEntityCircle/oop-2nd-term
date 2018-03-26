@@ -30,7 +30,7 @@ protected:
 public:
     DerivedClass() { }
     ~DerivedClass() { }
-    int getA() override { return a; }
+    int getA() { return a; }
     int getD() { return d; }
     int getE() { return e; }
     int getF() { return f; }

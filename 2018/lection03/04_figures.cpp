@@ -34,7 +34,7 @@ class Triangle: public Figure {
         float getC() { return c; }
 
         // Реализация виртуального метода
-        float square() override {
+        float square() {
             float p = (a+b+c)/2;
             return sqrtf(p*(p-a)*(p-b)*(p-c));
         }
@@ -56,7 +56,7 @@ class Rectangle: public Figure {
         float getB() { return b; }
 
         // Реализация виртуального метода
-        float square() override {
+        float square() {
             return a*b;
         }
 };
@@ -74,7 +74,7 @@ class Circle: public Figure {
         float getR() { return r; }
 
         // Реализация виртуального метода
-        float square() override {
+        float square() {
             return M_PI*r*r;
         }
 };
