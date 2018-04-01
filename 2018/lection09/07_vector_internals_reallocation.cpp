@@ -6,9 +6,9 @@ using namespace std;
 class A
 {
     public:
-        A() { cout << "Constructor" << endl; };
-        ~A() { cout << "Destructor" << endl; };
-        A(const A& a) { cout << "Copy" << endl; };
+        A() { cout << "Constructor" << endl; }
+        ~A() { cout << "Destructor" << endl; }
+        A(const A& a) { cout << "Copy" << endl; }
 };
 
 int main()
