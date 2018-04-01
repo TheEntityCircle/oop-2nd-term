@@ -35,7 +35,7 @@ int main()
 
     for (map<string,int>::iterator it = words.begin(); it != words.end(); it++)
     {
-        cout << (*it).first << ": " << (*it).second << endl;
+        cout << it->first << ": " << it->second << endl;
     }
 
     return 0;
