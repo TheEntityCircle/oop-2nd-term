@@ -86,7 +86,7 @@ public:
     items[2] = new Item("Ward", 1, 3, true);
 
     Player* players[2];
-    players[0] = new Wisard();
+    players[0] = new Wizard();
     players[0]->setStrength(3);
     players[0]->setLevel(5);
     players[1] = new Knight();
