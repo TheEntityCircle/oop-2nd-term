@@ -2,6 +2,7 @@
 #define ITEM_H
 
 #include <iostream>
+#include <string>
 using std::string;
 
 // Класс предмета
