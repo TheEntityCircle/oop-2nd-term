@@ -46,6 +46,9 @@
     for(int i = 0; i < 2; i++) {
         cout << "Can heal: " << players[i]->canHeal() << endl;
     }
+
+    for(int i = 0; i < 2; i++)
+        delete players[i];
 ```
 
 На выходе такого примера ожидается банальное:
