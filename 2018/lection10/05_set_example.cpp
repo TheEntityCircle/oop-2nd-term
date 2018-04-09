@@ -46,7 +46,7 @@ int main()
     // OutputIterator для вставки в указанное место указанного контейнера.
     set<string> su;
     set_union(a.begin(), a.end(), b.begin(), b.end(), std::inserter(su, su.end()));
-        cout << "Union of a and b: " << su << endl;
+    cout << "Union of a and b: " << su << endl;
 
     // Находим пересечение set-ов
     set<string> si;
@@ -62,11 +62,13 @@ int main()
     set<string> c;
     copy(su.begin(), su.end(), inserter(c, c.end()));
     c.insert("hello world");
+    c.insert("i");
+    c.insert("intersection");
     cout << "New set: " << c << endl;
 
     // Выводим на экран часть set-а, выбирая строки "по словарю"
     set<string> selection;
-    copy(c.lower_bound("c"), c.upper_bound("i"), inserter(selection, selection.end()));
+    copy(c.lower_bound("c"), --c.upper_bound("i"), inserter(selection, selection.end()));
     cout << "Selection: " << selection << endl;
 
     return 0; 
