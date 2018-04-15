@@ -17,7 +17,7 @@ int main()
     // Считаем вхождения элемента в вектор
     cout << count(v.begin(), v.end(), 12) << endl;
 
-    // Ищем элемент в вектор
+    // Ищем элемент в векторе
     if(find(v.begin(), v.end(), 5) != v.end())
         cout << "Element found" << endl;
     else
