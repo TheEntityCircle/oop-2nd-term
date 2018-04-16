@@ -17,6 +17,6 @@ auto compose(T a, E b) -> decltype(a+b) // decltype позволяет опре�
 int main()
 {
     auto c = compose(2, 3.14); // c - double
-    cout << c<< endl;
+    cout << c << endl;
     return 0;
 }

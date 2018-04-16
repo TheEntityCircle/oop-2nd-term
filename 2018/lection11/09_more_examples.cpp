@@ -18,7 +18,7 @@ int main()
     for(const auto &kv: map) 
     {
         cout << "Key: " << kv.first << endl;
-        for(auto v: kv.second)
+        for(const auto &v: kv.second)
             cout << "Value: " << v << endl;
     }
 
