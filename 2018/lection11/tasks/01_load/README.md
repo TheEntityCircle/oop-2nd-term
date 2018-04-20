@@ -31,12 +31,12 @@ public:
     }
 
     // На каком ядре процессора выполняется задача
-    int getCPU() {
+    int getCPU() const {
         return cpuNum;
     }
 
     // Оценка сложности задачи (в попугаях)
-    int getSize() {
+    int getSize() const {
         return size;
     }
 };
