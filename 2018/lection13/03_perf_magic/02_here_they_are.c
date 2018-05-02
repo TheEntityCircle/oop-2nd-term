@@ -33,6 +33,7 @@ int main()
     // Сборка итогового результата из накопителей
     result = x0 * x1 * x2 * x3 * x4 * x5;
 
-    printf("Res = %f\n", result);
+    printf("Res = %lf\n", result);
+    free(a);
     return 0;
 }

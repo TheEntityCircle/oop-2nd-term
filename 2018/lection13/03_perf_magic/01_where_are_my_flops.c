@@ -13,6 +13,7 @@ int main()
         result = result * a[i];
     }
 
-    printf("Res = %f\n", result);
+    printf("Res = %lf\n", result);
+    free(a);
     return 0;
 }
