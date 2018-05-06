@@ -13,6 +13,8 @@ public:
     {
         cout << "MyClass constructor called" << endl;
         data = unique_ptr<int[]>(new int[1000]);
+        for(int i = 0; i < 10; i++)
+            data[i] = i;
         throw runtime_error("Oops in constructor");
     }
 
