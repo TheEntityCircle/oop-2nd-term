@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 
 using namespace std;
 
@@ -15,7 +16,7 @@ int func1() {
 
 int main() {
     try {
-        int res = func1();
+        func1();
 
         // Тут идёт какая-то работа дальше
 
