@@ -4,6 +4,9 @@
 
 using namespace std;
 
+// Smart pointer-ы появились в C++11.
+// Более старые компиляторы это не соберут.
+
 class User
 {
 protected:

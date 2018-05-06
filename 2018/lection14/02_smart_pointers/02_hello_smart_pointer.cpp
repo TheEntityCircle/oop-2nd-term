@@ -3,6 +3,9 @@
 
 using namespace std;
 
+// Smart pointer-ы появились в C++11.
+// Более старые компиляторы это не соберут.
+
 int main()
 {
     unique_ptr<int[]> data = unique_ptr<int[]>(new int[10]);

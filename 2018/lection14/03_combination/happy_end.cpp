@@ -4,6 +4,9 @@
 
 using namespace std;
 
+// Smart pointer-ы появились в C++11.
+// Более старые компиляторы это не соберут.
+
 class MyClass
 {
 protected:
@@ -13,8 +16,6 @@ public:
     {
         cout << "MyClass constructor called" << endl;
         data = unique_ptr<int[]>(new int[1000]);
-        for(int i = 0; i < 10; i++)
-            data[i] = i;
         throw runtime_error("Oops in constructor");
     }
 
@@ -27,8 +28,6 @@ public:
 
     void doSomeWork()
     {
-        for(int i = 0; i < 10; i++)
-            cout << data[i] << endl;
         cout << "Ooops happened" << endl;
         throw runtime_error("Oops");
     }
