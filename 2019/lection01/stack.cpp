@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <iostream>
 
 class stack
 {
-// Class methods, they are declared as 'public' (so, 'visible' to the code outside of the class)
+// Class methods, they are declared as 'public' 
+// (so, 'visible' to the code outside of the class)
 public:
 	// Constructor: inits the stack of the given size, allocates memmory
 	stack(int size);
@@ -17,11 +17,12 @@ public:
 	// Clean the data, but leave the stack allocated
 	void clear();
 
-// Class fields, they are declared as 'private' (so, not 'visible' to the code outside of the class)
+// Class fields, they are declared as 'private' 
+// (so, *not* 'visible' to the code outside of the class)
 private:
 	int top;	// index of first free slot on stack
 	int size;	// stack size
-	int* data;	// stack data (ALARM: it's not C++ style, we'll fix it later)
+	int* data;	// stack data (not C++ style, we'll fix it later)
 };
 
 stack::stack(int stack_size)
@@ -83,7 +84,7 @@ int main()
 	s2.push(2);
 	s2.push(3);
 	printf("Data from s2: %d\n", s2.pop());
-	s2.top = 1;	// compiler will not tolerate private field access from the code outside of the class
+	s2.top = 1;	// compiler will not tolerate private field access
 	printf("Data from s2: %d\n", s2.pop());
 	*/
 
