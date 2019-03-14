@@ -24,3 +24,10 @@
 - [Слайды](https://github.com/avasyukov/oop-2nd-term/raw/master/2019/slides/lection04.pdf)
 - [Примеры кода](https://github.com/avasyukov/oop-2nd-term/tree/master/2019/lection04)
 - [Контест](http://judge2.vdi.mipt.ru/cgi-bin/new-client?contest_id=911140)
+
+
+### Лекция 5
+
+- [Слайды](https://github.com/avasyukov/oop-2nd-term/raw/master/2019/slides/lection05.pdf)
+- [Примеры кода](https://github.com/avasyukov/oop-2nd-term/tree/master/2019/lection05)
+- [Контест](http://judge2.vdi.mipt.ru/cgi-bin/new-client?contest_id=911141)
