@@ -58,7 +58,7 @@ std::ostream& operator<<(std::ostream& os, const Vector2D& v) {
 // Чтение вектора, пусть будет просто две координаты без хитростей
 std::istream& operator>>(std::istream &is, Vector2D &v) {
     int x, y;
-    cin >> x >> y;
+    is >> x >> y;
     v.setX(x);
     v.setY(y);
     return is;
