@@ -44,3 +44,9 @@
 - [Примеры кода](https://github.com/avasyukov/oop-2nd-term/tree/master/2019/lection07)
 - [Контест](http://judge2.vdi.mipt.ru/cgi-bin/new-client?contest_id=911143)
 
+### Лекция 8
+
+- [Слайды](https://github.com/avasyukov/oop-2nd-term/raw/master/2019/slides/lection08.pdf)
+- [Примеры кода](https://github.com/avasyukov/oop-2nd-term/tree/master/2019/lection08)
+- [Контест](http://judge2.vdi.mipt.ru/cgi-bin/new-client?contest_id=911144)
+
