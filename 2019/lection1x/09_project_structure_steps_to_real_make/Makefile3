@@ -1,0 +1,17 @@
+CC=g++
+CFLAGS=-c -Wall
+LDFLAGS=
+
+SOURCES=animal.cpp cow.cpp crazy_dog.cpp dog.cpp main.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
+
+all: test
+
+test: $(OBJECTS)
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
+
+.cpp.o:
+	$(CC) $(CFLAGS) $<
+
+clean:
+	rm -f *.o test

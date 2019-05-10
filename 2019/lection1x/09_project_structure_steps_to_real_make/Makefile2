@@ -1,0 +1,10 @@
+all: test
+
+test: main.o animal.o cow.o dog.o crazy_dog.o
+	g++ $^ -o $@
+
+%.o: %.cpp %.hpp
+	g++ -c $<
+
+clean:
+	rm -f *.o test

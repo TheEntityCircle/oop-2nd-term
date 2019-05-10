@@ -1,0 +1,22 @@
+all: test
+
+test: main.o animal.o cow.o dog.o crazy_dog.o
+	g++ main.o animal.o cow.o dog.o crazy_dog.o -o test
+
+main.o:
+	g++ -c main.cpp
+
+animal.o:
+	g++ -c animal.cpp
+
+cow.o:
+	g++ -c cow.cpp
+
+dog.o:
+	g++ -c dog.cpp
+
+crazy_dog.o:
+	g++ -c crazy_dog.cpp
+
+clean:
+	rm *.o test
