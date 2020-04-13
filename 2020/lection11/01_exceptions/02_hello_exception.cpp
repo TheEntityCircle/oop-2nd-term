@@ -3,16 +3,15 @@
 
 using namespace std;
 
-// Считаем, что 0 - код успешного завершения
-int func1()
+// Функция теперь void, ей не нужно возвращать статус
+void func1()
 {
     // Тут происходит какая-то работа
 
     // Делаем вид, что всё сломалось
     throw runtime_error("I'm func1. I can not do my work. I'm just too lazy today.");
 
-    // Нормальное завершение работы
-    return 0;
+    // Если требуется, работаем дальше
 }
 
 int main()
