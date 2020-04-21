@@ -16,10 +16,14 @@ using namespace std;
 int main()
 {
     // Данные
-    vector<int> data = {0, 1, 2, 3, 4, 5};
+    vector<int> data = {0, 1, 2, 3, 4, 5, 6, 7, 8};
+    for (int i : data) {
+        cout << i << ' ';
+    }
+    cout << endl;
 
     // Лямбда-функция, возвращает bool, логически "фильтр"
-    auto even = [](int i) { return 0 == i % 2; };
+    auto is_even = [](int i) { return 0 == i % 2; };
 
     // Лямбда-функция, возвращает значение, логически "преобразователь"
     auto square = [](int i) { return i * i; };
@@ -28,7 +32,13 @@ int main()
     // - каждый элемент вектора с данными передаётся фильтру,
     // - результаты фильтрации передаются преобразователю,
     // - результаты преобразования попадают в тело цикла.
-    for (int i : data | ranges::views::filter(even) | ranges::views::transform(square)) {
+    for (int i : data | ranges::views::filter(is_even) | ranges::views::transform(square)) {
+        cout << i << ' ';
+    }
+    cout << endl;
+
+    // Пропустим первые два элемента из данных, а из следующих трёх выведем только чётные
+    for (int i : data | ranges::views::drop(2) | ranges::views::take(3) | ranges::views::filter(is_even)) {
         cout << i << ' ';
     }
     cout << endl;
