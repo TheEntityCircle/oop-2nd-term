@@ -72,7 +72,14 @@ public:
 int main() {
     cout << boolalpha;
 
-    CrazyDog* animal;
+    cout << "======== Calling via CrazyDog* (works as expected) ========" << endl;
+    CrazyDog* cd;
+    cd = new CrazyDog();
+    cd->say();
+    delete cd;
+
+    cout << "======== Calling via Animal* (ooops happens) ========" << endl;
+    Animal* animal;
     animal = new CrazyDog();
     animal->say();
     delete animal;

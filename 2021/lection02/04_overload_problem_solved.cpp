@@ -82,7 +82,7 @@ int main() {
     animals[3] = new CrazyDog();
 
     // Попробовали к ним обращаться (спойлер - теперь работает!)
-    for(int i = 1; i < 4; i++) { // <-- от 1-го, так как Animal() более нет
+    for(int i = 1; i < 4; i++) { // <-- от 1-го, так как Animal() теперь создать нельзя
         cout << "Animal[" << i << "] has brain? " << animals[i]->hasBrain() << endl;
         cout << "Animal[" << i << "] says: ";
         animals[i]->say();
