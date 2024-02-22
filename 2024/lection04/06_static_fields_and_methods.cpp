@@ -7,18 +7,18 @@ class A
 public:
     // Нестатическое поле
     int non_static_int = 0;
-    // Статическое поле
+    // Статическое поле ("заголовок")
     static int static_int;
 
-    static int static_method()
+    static void static_method()
     {
-        return static_int;
-        // Ошибка: статический метод может использовать только статические поля класса!
-        // return non_static_int;
+        static_int++;     // можно
+        //non_static_int++; // нельзя
     }
 };
 
 // Статическое поле присвоено для класса *вообще*, не для конкретного экземпляра
+// Это объявление статической переменной, без него будет ругаться линкер.
 int A::static_int = 0;
 
 
@@ -55,10 +55,10 @@ int main()
 
     // Вызываем статический метод
     // (а) из экземпляров класса
-    cout << a1.static_method() << endl;
-    cout << a2.static_method() << endl;
+    a1.static_method();
+    a2.static_method();
     // (б) без экземпляра класса
-    cout << A::static_method() << endl;
+    A::static_method();
 
     return 0;
 }
