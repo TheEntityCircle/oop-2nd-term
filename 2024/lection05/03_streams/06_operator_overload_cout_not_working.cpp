@@ -23,7 +23,7 @@ public:
 
 // Перегруженный оператор, вывод вектора в формате (1; 1)
 std::ostream& operator<<(std::ostream& os, Vector2D& v) {
-    cout << "(" << v.x << "; " << v.y << ")";
+    os << "(" << v.x << "; " << v.y << ")";
     return os;
 }
 
