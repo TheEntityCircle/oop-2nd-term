@@ -16,7 +16,6 @@ public:
 
 std::ostream& operator<<(std::ostream& os, const Person& p) {
     os << "(" << p.getName() << ")";
-    return os;
 }
 
 int main()
