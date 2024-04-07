@@ -45,7 +45,7 @@ class Stack
         Stack& operator = (const Stack &s)
         {
             cout << "Custom assignment operator called" << endl;
-            // Очистим нынешнй блок памяти
+            // Очистим нынешний блок памяти
             delete[] ptr;
             // Пересоздадимся из переданного образца
             capacity = s.capacity;
