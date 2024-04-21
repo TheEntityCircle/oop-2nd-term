@@ -35,11 +35,16 @@ public:
     }
 };
 
+void imposter()
+{
+    MyClass a;
+    a.doSomeWork();
+}
+
 int main()
 {
     try {
-        MyClass a;
-        a.doSomeWork();
+        imposter();
     } catch (const exception& e) {
         cerr << "We failed!" << endl;
         cerr << "Failure reason: " << e.what() << endl;

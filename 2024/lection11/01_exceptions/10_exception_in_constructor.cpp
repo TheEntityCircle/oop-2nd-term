@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Так не надо делать
+// Всё ещё не до конца хорошее решение
 // Ремарка: стоит посмотреть на это под valgrind-ом
 
 class MyClass
@@ -16,6 +16,7 @@ public:
     {
         cout << "MyClass constructor called" << endl;
         data = new int[1000];
+        throw runtime_error("Oops in constructor");
     }
 
     ~MyClass()
@@ -31,9 +32,20 @@ public:
     }
 };
 
-int main()
+void imposter()
 {
     MyClass a;
     a.doSomeWork();
+}
+
+int main()
+{
+    try {
+        imposter();
+    } catch (const exception& e) {
+        cerr << "We failed!" << endl; 
+        cerr << "Failure reason: " << e.what() << endl;
+        return -1;
+    }
     return 0;
 }

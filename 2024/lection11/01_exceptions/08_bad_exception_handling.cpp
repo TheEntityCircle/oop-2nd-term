@@ -3,8 +3,8 @@
 
 using namespace std;
 
-// Так уже лучше. 
-// Но проблемы ещё есть, см. следующий пример.
+// Так не надо делать
+// Ремарка: стоит посмотреть на это под valgrind-ом
 
 class MyClass
 {
@@ -31,15 +31,14 @@ public:
     }
 };
 
+void imposter()
+{
+    MyClass a;
+    a.doSomeWork();
+}
+
 int main()
 {
-    try {
-        MyClass a;
-        a.doSomeWork();
-    } catch (const exception& e) {
-        cerr << "We failed!" << endl; 
-        cerr << "Failure reason: " << e.what() << endl;
-        return -1;
-    }
+    imposter();
     return 0;
 }

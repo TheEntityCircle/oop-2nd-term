@@ -6,6 +6,8 @@ using namespace std;
 // Smart pointer-ы появились в C++11.
 // Более старые компиляторы это не соберут.
 
+// Есть разница между int* и int[] - как и у delete
+
 int main()
 {
     unique_ptr<int[]> data = unique_ptr<int[]>(new int[10]);
